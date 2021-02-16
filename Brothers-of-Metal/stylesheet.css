@@ -1,6 +1,7 @@
 body {
+    font-family: 'Times New Roman', Times, serif;
     background-color: #16232b;
-    color: lightgray;
+    color: rgb(189, 187, 187);
     height: 100vh;
 }
 
@@ -12,6 +13,15 @@ body {
 .dayMode h1 {
     color: goldenrod;
     -webkit-text-stroke: 1px black;
+}
+
+.dayMode h2, .dayMode h3 {
+    color:black;
+}
+
+.dayMode .more-info {
+    background-color: #828e5f;
+    color: black;
 }
 
 .dayMode .album-image {
@@ -41,6 +51,7 @@ body {
 
 h1, h2, h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: lightgray;
 }
 
 h1 {
@@ -118,6 +129,32 @@ body {
     padding: 10px;
 
     border-left:10px solid rgb(51, 51, 51);
+}
+
+.more-info {
+    border: none;
+    background-color: rgb(51, 51, 51);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    width: 25%;
+    position: fixed;
+    bottom: 10px;
+    right: 36vw;
+    min-width: 132px;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.more-info:hover {
+    background-color: lightgrey;
+    color: rgb(51, 51, 51);
+}
+
+.unformat-link {
+    text-decoration: none;
+    color: lightgrey;
 }
 
 .clear-both {
@@ -221,13 +258,57 @@ body {
     transform: translateX(26px);
   }
 
-.slider.round {
+    .slider.round {
     border-radius: 34px;
   }
   
-  .slider.round:before {
+    .slider.round:before {
     border-radius: 50%;
   }
 
+input[type=text], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
 
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
   
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+.label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.submit {
+    /* align-content: center; */
+    position: fixed;
+    left: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .submit {
+        left: 0px;
+    }
+  }
