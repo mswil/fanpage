@@ -9,6 +9,11 @@ body {
     color: black;
 }
 
+.dayMode h1 {
+    color: goldenrod;
+    -webkit-text-stroke: 1px black;
+}
+
 .dayMode .album-image {
     border-color: black;
 }
@@ -17,18 +22,13 @@ body {
     color: #150d7d;
 }
 
-.dayMode .footer {
-    background-color: #adbc85;
-    border-left: 10px solid #828e5f;
-}
-
 .dayMode th {
     border-color: black;
 }
 
-.dayMode h1 {
-    color: goldenrod;
-    -webkit-text-stroke: 1px black;
+.dayMode .footer {
+    background-color: #adbc85;
+    border-left: 10px solid #828e5f;
 }
 
 .dayMode .day-mode {
@@ -228,3 +228,6 @@ body {
   .slider.round:before {
     border-radius: 50%;
   }
+
+
+  
